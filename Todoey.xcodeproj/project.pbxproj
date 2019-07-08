@@ -12,16 +12,18 @@
 		DC6CBD2B22D147770016C843 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6CBD2922D147770016C843 /* Main.storyboard */; };
 		DC6CBD2D22D1477B0016C843 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6CBD2C22D1477B0016C843 /* Assets.xcassets */; };
 		DC6CBD3022D1477B0016C843 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6CBD2E22D1477B0016C843 /* LaunchScreen.storyboard */; };
+		DC6CBD3D22D3CB420016C843 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6CBD3C22D3CB420016C843 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DC6CBD2222D147770016C843 /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6CBD2522D147770016C843 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC6CBD2722D147770016C843 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
+		DC6CBD2722D147770016C843 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TodoListViewController.swift; path = ../TodoListViewController.swift; sourceTree = "<group>"; };
 		DC6CBD2A22D147770016C843 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC6CBD2C22D1477B0016C843 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC6CBD2F22D1477B0016C843 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC6CBD3122D1477B0016C843 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC6CBD3C22D3CB420016C843 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Item.swift; path = ../Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,46 @@
 			isa = PBXGroup;
 			children = (
 				DC6CBD2522D147770016C843 /* AppDelegate.swift */,
-				DC6CBD2722D147770016C843 /* TodoListViewController.swift */,
-				DC6CBD2922D147770016C843 /* Main.storyboard */,
-				DC6CBD2C22D1477B0016C843 /* Assets.xcassets */,
-				DC6CBD2E22D1477B0016C843 /* LaunchScreen.storyboard */,
+				DC6CBD3E22D3CB580016C843 /* Data Model */,
+				DC6CBD3F22D3CB760016C843 /* Controllers */,
+				DC6CBD4022D3CBE50016C843 /* Views */,
+				DC6CBD4122D3CC200016C843 /* Supporting Files */,
 				DC6CBD3122D1477B0016C843 /* Info.plist */,
 			);
 			path = Todoey;
+			sourceTree = "<group>";
+		};
+		DC6CBD3E22D3CB580016C843 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC6CBD3C22D3CB420016C843 /* Item.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		DC6CBD3F22D3CB760016C843 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DC6CBD2722D147770016C843 /* TodoListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DC6CBD4022D3CBE50016C843 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC6CBD2922D147770016C843 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DC6CBD4122D3CC200016C843 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC6CBD2C22D1477B0016C843 /* Assets.xcassets */,
+				DC6CBD2E22D1477B0016C843 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC6CBD2822D147770016C843 /* TodoListViewController.swift in Sources */,
+				DC6CBD3D22D3CB420016C843 /* Item.swift in Sources */,
 				DC6CBD2622D147770016C843 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
